@@ -1,0 +1,19 @@
+packages:
+	Flask-Session
+	flask-jsonrpc
+	mysqlclient
+	psutil
+	
+	
+	
+http://52.80.29.33:8000/gambling/lottery.html#/
+	
+container_id/container_name:  8956cee6b3f3/lottery_web_rpc
+container_addr: /var/lib/docker/aufs/mnt/8956cee6b3f3890619951dea0fc5ba1ac45528a22831cb78bfed632475cf9989
+sudo ls -l  /var/lib/docker/aufs/mnt/ab7632db4129a1a8a3305683c24353071befc212c7b057c480429f5776ab40b7/var/www/html (lottery site location)
+
+
+sudo cp lottery_web_rpc.py /var/lib/docker/aufs/mnt/8956cee6b3f3890619951dea0fc5ba1ac45528a22831cb78bfed632475cf9989/
+sudo cp /var/lib/docker/aufs/mnt/8956cee6b3f3890619951dea0fc5ba1ac45528a22831cb78bfed632475cf9989/lottery_web_flask/lottery_web_rpc.py  .
+sudo cp . /var/lib/docker/aufs/mnt/8956cee6b3f3890619951dea0fc5ba1ac45528a22831cb78bfed632475cf9989/lottery_web_flask/lottery_web_rpc.py
+cp lottery_web_rpc.py lottery_web_flask/lottery_web_rpc.py 
